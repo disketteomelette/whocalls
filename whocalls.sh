@@ -17,6 +17,5 @@ rm b.tmp;
 echo "[telefonospam]";
 lynx --dump "https://www.telefonospam.es/"$numero | grep "Tipo de llamada" | grep -v "Escoger tipo";
 echo "[quienhallamado]";
-
-    lynx --dump "https://www.quienhallamado.es/"$numero | grep "Seriedad:";
+lynx --dump "https://www.quienhallamado.es/"$numero | grep "Seriedad:";
 
